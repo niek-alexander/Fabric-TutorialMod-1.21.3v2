@@ -1,5 +1,9 @@
 {
  "item.tutorialmod.mosaic_shard": "Mosaic Shard",
 
- "block.tutorialmod.slop_leaf_block": "Slop Leaves"
+ "block.tutorialmod.slop_leaf_block": "Slop Leaves",
+ "item.tutorialmod.slop_leaf_block": "Slop Leaves",
+
+ "itemgroup.tutorialmod.challenge_pit_items": "Challenge Pit Items",
+ "itemgroup.tutorialmod.challenge_pit_blocks": "Challenge Pit Blocks"
 }
