@@ -1,0 +1,6 @@
+{
+  "parent":"minecraft:block/cube_all",
+  "textures": {
+    "all": "tutorialmod:block/compressed_obsidian_shard_block"
+  }
+}

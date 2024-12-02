@@ -1,8 +1,27 @@
 {
  "item.tutorialmod.mosaic_shard": "Mosaic Shard",
+ "item.tutorialmod.compressed_obsidian_shard": "Compressed Obsidian Shard",
+
+ "item.tutorialmod.empty_jar": "Empty Jar",
+
+ "item.tutorialmod.slopjar": "Slopjar",
+ "tooltip.tutorialmod.slopjar.shift_down": "This jar can be filled by adding Slop Fruit to it",
+ "tooltip.tutorialmod.slopjar": "Press §eShift§r for more information!",
+
+ "item.tutorialmod.slop_fruit": "Slop Fruit",
 
  "block.tutorialmod.slop_leaf_block": "Slop Leaves",
  "item.tutorialmod.slop_leaf_block": "Slop Leaves",
+
+ "block.tutorialmod.compressed_obsidian_block": "Porous Obsidian", //wack
+ "item.tutorialmod.compressed_obsidian_block": "Porous Obsidian",  //wack
+
+ "block.tutorialmod.spider_egg_block": "Spider Egg Block", //wack
+ "item.tutorialmod.spider_egg_block": "Spider Egg",  //wack
+ "tooltip.tutorialmod.spider_egg_block": "This block wont §9hatch§r",
+
+ "block.tutorialmod.compressed_obsidian_shard_block": "Compressed Obsidian Shards",
+ "item.tutorialmod.compressed_obsidian_shard_block": "Compressed Obsidian Shards",
 
  "itemgroup.tutorialmod.challenge_pit_items": "Challenge Pit Items",
  "itemgroup.tutorialmod.challenge_pit_blocks": "Challenge Pit Blocks"

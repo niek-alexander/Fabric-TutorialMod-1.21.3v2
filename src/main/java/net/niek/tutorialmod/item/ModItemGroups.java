@@ -17,6 +17,11 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.tutorialmod.challenge_pit_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MOSAIC_SHARD);
+                        entries.add(ModItems.COMPRESSED_OBSIDIAN_SHARD);
+
+                        entries.add(ModItems.SLOPJAR);
+                        entries.add(ModItems.EMPTYJAR);
+                        entries.add(ModItems.SLOPFRUIT);
                     }).build());
 
     public static final ItemGroup CHALLENGE_PIT_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -25,6 +30,11 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.tutorialmod.challenge_pit_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.SLOP_LEAF_BLOCK);
+                        entries.add(ModBlocks.COMPRESSED_OBSIDIAN_BLOCK);
+                        entries.add(ModBlocks.COMPRESSED_OBSIDIAN_SHARD_BLOCK);
+
+                        entries.add(ModBlocks.SPIDER_EGG_BLOCK);
+
                     }).build());
 
 
