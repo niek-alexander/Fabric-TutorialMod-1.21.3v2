@@ -1,6 +1,0 @@
-{
-  "parent":"minecraft:block/dragon_egg",
-  "textures": {
-    "all": "tutorialmod:block/spider_egg_block"
-  }
-}

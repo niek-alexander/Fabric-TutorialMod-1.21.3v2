@@ -32,7 +32,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SLOP_LEAF_BLOCK);
                         entries.add(ModBlocks.COMPRESSED_OBSIDIAN_BLOCK);
                         entries.add(ModBlocks.COMPRESSED_OBSIDIAN_SHARD_BLOCK);
-
                         entries.add(ModBlocks.SPIDER_EGG_BLOCK);
 
                     }).build());

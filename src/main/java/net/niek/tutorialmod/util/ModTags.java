@@ -16,7 +16,7 @@ public class ModTags {
     }
 
     public static class Items{
-        private static final TagKey<Item> UNSET_TAG_ITEMS = createTag("unset_tag_items");
+        public static final TagKey<Item> UNSET_TAG_ITEMS = createTag("unset_tag_items");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, name));

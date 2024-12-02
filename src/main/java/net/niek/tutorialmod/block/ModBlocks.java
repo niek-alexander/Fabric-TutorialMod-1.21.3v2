@@ -59,6 +59,7 @@ public class ModBlocks {
             )
     );
 
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(TutorialMod.MOD_ID, name));
@@ -66,10 +67,9 @@ public class ModBlocks {
     }
 
     private static void registerBlockItem(String name, Block block) {
-        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, name));
-        Registry.register(Registries.ITEM, itemKey, new BlockItem(block, new Item.Settings()
-                .registryKey(itemKey)
-        ));
+        Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name),
+                new BlockItem(block, new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(TutorialMod.MOD_ID, name))
+        )));
     }
 
     public static void registerModBlocks() {
@@ -79,6 +79,7 @@ public class ModBlocks {
             entries.add(ModBlocks.SLOP_LEAF_BLOCK);
             entries.add(ModBlocks.COMPRESSED_OBSIDIAN_BLOCK);
             entries.add(ModBlocks.COMPRESSED_OBSIDIAN_SHARD_BLOCK);
+            entries.add(ModBlocks.SPIDER_EGG_BLOCK);
 
         });
     }
