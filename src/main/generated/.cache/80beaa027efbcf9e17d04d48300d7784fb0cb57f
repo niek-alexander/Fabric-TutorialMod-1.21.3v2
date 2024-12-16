@@ -1,3 +1,4 @@
-// 1.21.3	2024-12-02T18:45:56.5925891	Tutorial Mod/Tags for minecraft:block
+// 1.21.3	2024-12-16T15:16:22.2959076	Tutorial Mod/Tags for minecraft:block
 93acec34d18e73b7616e8edec50368b1df04c111 data\minecraft\tags\block\mineable\pickaxe.json
 93acec34d18e73b7616e8edec50368b1df04c111 data\minecraft\tags\block\needs_diamond_tool.json
+219c32669cd2ada3c61b231e54fac7b8a7d45bfc data\tutorialmod\tags\block\needs_compressed_obsidian_tool.json

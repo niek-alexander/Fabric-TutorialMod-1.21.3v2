@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeGenerator;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.niek.tutorialmod.block.ModBlocks;
@@ -29,11 +31,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('S', ModItems.COMPRESSED_OBSIDIAN_SHARD)
                         .criterion(hasItem(ModItems.COMPRESSED_OBSIDIAN_SHARD), conditionsFromItem(ModItems.COMPRESSED_OBSIDIAN_SHARD))
                         .offerTo(exporter);
+
                 createShaped(RecipeCategory.MISC, ModItems.EMPTYJAR, 2)
                         .pattern("G G")
                         .pattern("GGG")
                         .input('G', Blocks.GLASS)
                         .criterion(hasItem(Blocks.GLASS), conditionsFromItem(Blocks.GLASS))
+                        .offerTo(exporter);
+
+                createShaped(RecipeCategory.TOOLS, ModItems.COMPRESSED_OBSIDIAN_SWORD)
+                            .pattern("CCC")
+                            .pattern(" S ")
+                            .pattern(" S ")
+                            .input('C', ModBlocks.COMPRESSED_OBSIDIAN_SHARD_BLOCK)
+                            .input('S', Items.STICK)
+                            .criterion(hasItem(ModBlocks.COMPRESSED_OBSIDIAN_SHARD_BLOCK), conditionsFromItem(ModBlocks.COMPRESSED_OBSIDIAN_SHARD_BLOCK))
                         .offerTo(exporter);
             }
         };

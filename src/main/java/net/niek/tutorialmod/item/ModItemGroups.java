@@ -17,11 +17,19 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.tutorialmod.challenge_pit_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.MOSAIC_SHARD);
+                        entries.add(ModItems.TOUGH_HIDE);
                         entries.add(ModItems.COMPRESSED_OBSIDIAN_SHARD);
 
                         entries.add(ModItems.SLOPJAR);
                         entries.add(ModItems.EMPTYJAR);
                         entries.add(ModItems.SLOPFRUIT);
+
+                        entries.add(ModItems.COMPRESSED_OBSIDIAN_SWORD);
+
+                        entries.add(ModItems.TOUGH_HIDE_HELMET);
+                        entries.add(ModItems.TOUGH_HIDE_CHESTPLATE);
+                        entries.add(ModItems.TOUGH_HIDE_LEGGINGS);
+                        entries.add(ModItems.TOUGH_HIDE_BOOTS);
                     }).build());
 
     public static final ItemGroup CHALLENGE_PIT_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

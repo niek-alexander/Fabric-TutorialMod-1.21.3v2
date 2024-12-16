@@ -1,0 +1,14 @@
+{
+  "Layers": {
+    "humanoid": [
+      {
+        "texture": "tutorialmod:tough_hide"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "tutorialmod:tough_hide"
+      }
+    ]
+  }
+}

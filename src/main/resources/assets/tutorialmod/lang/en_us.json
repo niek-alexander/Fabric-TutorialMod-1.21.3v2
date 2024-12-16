@@ -2,7 +2,16 @@
  "item.tutorialmod.mosaic_shard": "Mosaic Shard",
  "item.tutorialmod.compressed_obsidian_shard": "Compressed Obsidian Shard",
 
+ "item.tutorialmod.compressed_obsidian_sword": "Dense Obsidian Sword",
+
  "item.tutorialmod.empty_jar": "Empty Jar",
+
+
+ "item.tutorialmod.tough_hide": "Tough Hide",
+ "item.tutorialmod.tough_hide_helmet": "Tough Hide Helmet",
+ "item.tutorialmod.tough_hide_chestplate": "Tough Hide Chestplate",
+ "item.tutorialmod.tough_hide_leggings": "Tough Hide Leggings",
+ "item.tutorialmod.tough_hide_boots": "Tough Hide Boots",
 
  "item.tutorialmod.slopjar": "Slopjar",
  "tooltip.tutorialmod.slopjar.shift_down": "This jar can be filled by adding Slop Fruit to it",

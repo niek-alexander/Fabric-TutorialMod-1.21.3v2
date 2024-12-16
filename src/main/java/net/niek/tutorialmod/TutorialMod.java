@@ -19,7 +19,6 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
-
 		ModBlocks.registerModBlocks();
 	}
 }
