@@ -23,3 +23,5 @@ public class ModArmorMaterials {
             }), 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, ModTags.Items.COMPRESSED_OBSIDIAN_SHARD_REPAIR,
                     Identifier.of(TutorialMod.MOD_ID, "tough_hide"));
 }
+
+//wow!
