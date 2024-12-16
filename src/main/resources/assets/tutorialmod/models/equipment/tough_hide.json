@@ -1,5 +1,10 @@
 {
-  "Layers": {
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "tutorialmod:tough_hide"
+      }
+    ],
     "humanoid": [
       {
         "texture": "tutorialmod:tough_hide"

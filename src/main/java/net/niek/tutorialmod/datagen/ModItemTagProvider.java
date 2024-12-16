@@ -22,10 +22,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.COMPRESSED_OBSIDIAN_SWORD);
 
-//        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-//                .add(ModItems.TOUGH_HIDE_HELMET)
-//                .add(ModItems.TOUGH_HIDE_CHESTPLATE)
-//                .add(ModItems.TOUGH_HIDE_LEGGINGS)
-//                .add(ModItems.TOUGH_HIDE_BOOTS);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.TOUGH_HIDE_HELMET)
+                .add(ModItems.TOUGH_HIDE_CHESTPLATE)
+                .add(ModItems.TOUGH_HIDE_LEGGINGS)
+                .add(ModItems.TOUGH_HIDE_BOOTS);
     }
 }

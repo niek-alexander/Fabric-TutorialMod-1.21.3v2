@@ -7,7 +7,6 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import net.niek.tutorialmod.util.ModTags;
-//ModTags.Items.COMPRESSED_OBSIDIAN_SHARD_REPAIR,
 
 import java.util.EnumMap;
 

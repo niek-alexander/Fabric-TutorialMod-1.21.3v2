@@ -7,13 +7,11 @@ import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.ModelIds;
 import net.minecraft.data.client.Models;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.equipment.EquipmentModel;
 import net.minecraft.util.Identifier;
 import net.niek.tutorialmod.TutorialMod;
 import net.niek.tutorialmod.block.ModBlocks;
 import net.niek.tutorialmod.item.ModItems;
-import org.apache.commons.logging.Log;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {

@@ -71,11 +71,6 @@ public class ModItems {
 
 
 
-
-
-
-
-
     public static void registerFuels () {
         FuelRegistryEvents.BUILD.register((builder, context) -> {
             // You can add multiple items at once in this lambda.
