@@ -1,0 +1,17 @@
+{
+  "type": "tutorialmod:darkdim_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:swamp",
+      "layers": [],
+      "structure_overrides": []
+    }
+  },
+  "visual_settings": {
+    "fog": {
+      "fog_color": [1.0, 0.5, 0.2],
+      "density": 0.8
+    }
+  }
+}

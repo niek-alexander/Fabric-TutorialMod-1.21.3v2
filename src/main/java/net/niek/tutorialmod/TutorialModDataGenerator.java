@@ -2,7 +2,12 @@ package net.niek.tutorialmod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 import net.niek.tutorialmod.datagen.*;
+import net.niek.tutorialmod.world.ModConfiguredFeatures;
+import net.niek.tutorialmod.world.ModPlacedFeatures;
+import net.niek.tutorialmod.world.dimension.ModDimensions;
 
 public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -14,5 +19,15 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModWorldGenerator::new);
+	}
+
+	@Override
+		public void buildRegistry (RegistryBuilder registryBuilder){
+
+			registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+			registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
+			registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
 	}
 }
