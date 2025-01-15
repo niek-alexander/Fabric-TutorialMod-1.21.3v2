@@ -20,18 +20,9 @@ public class BlockEventHandler {
         PlayerBlockBreakEvents.AFTER.register((world, player, pos, state, blockEntity) -> {
             if (!world.isClient() && world instanceof ServerWorld serverWorld) {
                 Block block = state.getBlock();
-                boolean isValuable = ValuableBlockTag.isValuableBlock(pos);
+                boolean isValuable = ValuableBlockTag.isValuableBlock(block);
 
-                // Schedule regeneration
                 BlockRegenerationManager.scheduleRegeneration(serverWorld, pos, block, isValuable);
-
-                // Remove valuable block tracking if applicable
-                if (isValuable) {
-                    ValuableBlockTag.trackValuableBlock(pos, null);
-                    LOGGER.info("Removed valuable block tracking for {}", pos);
-                } else {
-                    LOGGER.info("Scheduled regeneration for non-valuable block at {}", pos);
-                }
             }
         });
 
@@ -40,17 +31,15 @@ public class BlockEventHandler {
             if (!world.isClient() && world instanceof ServerWorld serverWorld) {
                 BlockPos pos = hitResult.getBlockPos();
                 Direction direction = hitResult.getSide();
-                Block placedBlock = world.getBlockState(pos.offset(direction)).getBlock();
+                BlockPos placedBlockPos = pos.offset(direction);
+                Block placedBlock = world.getBlockState(placedBlockPos).getBlock();
 
-                ValuableBlockTag.trackValuableBlock(pos, placedBlock); // Track all placed blocks
+                boolean isValuable = ValuableBlockTag.isValuableBlock(placedBlock);
+                BlockRegenerationManager.scheduleRegeneration(serverWorld, placedBlockPos, placedBlock, isValuable);
+
                 LOGGER.info("Tracked block placed by player at {}", pos);
             }
             return ActionResult.PASS;
         });
-    }
-
-
-    private static boolean isValuableBlock(Block block) {
-        return block.getTranslationKey().contains("valuable"); // Example logic
     }
 }

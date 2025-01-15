@@ -23,7 +23,7 @@ public class PlayerPositionTracker {
 
         if (simulatedY < currentY) {        //slowly ascend
             ++simulatedY;
-        } else if (simulatedY > currentY) { //snap to pos, we only care about lowest point
+        } else if (simulatedY > currentY) { //snap to pos, we only care about the lowest point
             simulatedY = (int) currentY;
         }
         simulatedYPositions.put(playerId, simulatedY);
